@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100svh;
+  line-height: 1.5;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --clr-primary-text: 193 38% 86%;
+  --clr-primary-header: 150 100% 66%;
+  --clr-primary-btn: var(--clr-primary-header);
+  --clr-neutral-main-bg: 217 19% 24%;
+  --clr-neutral-body-bg: 218 23% 16%;
+  --ff-general: "Manrope", sans-serif;
+  --fw-extrabold: 800;
+  --fs-general: 1.75rem;
+}
+
+body {
+  display: grid;
+  place-content: safe center;
+  padding: 1rem;
+  font-family: var(--ff-general);
+  font-weight: var(--fw-extrabold);
+  font-size: var(--fs-general);
+  background-color: hsl(var(--clr-neutral-body-bg));
+}
+
+.app {
+  min-width: 343px;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: hsl(var(--clr-neutral-main-bg));
+}
+.app h1 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  color: hsl(var(--clr-primary-header));
+}
+.app .app__advice {
+  color: hsl(var(--clr-primary-text));
+}
+
+.app__dice-btn {
+  position: relative;
+  top: 50%;
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-primary-btn));
+}
+.app__dice-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2rem 0 hsl(var(--clr-primary-btn));
+}/*# sourceMappingURL=style.css.map */

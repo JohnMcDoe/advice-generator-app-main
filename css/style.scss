@@ -1,0 +1,72 @@
+@use "reset";
+
+// Custom properties
+:root {
+    --clr-primary-text: 193 38% 86%;
+    --clr-primary-header: 150 100% 66%;
+    --clr-primary-btn: var(--clr-primary-header);
+
+    // --clr-neutral-main-bg: 217 19% 38%;
+    --clr-neutral-main-bg: 217 19% 24%;
+    --clr-neutral-body-bg: 218 23% 16%;
+
+    --ff-general: "Manrope", sans-serif;
+    
+    --fw-extrabold: 800;
+
+    --fs-general: 1.75rem;
+}
+
+// Components
+body {
+    display: grid;
+    place-content: safe center;
+    padding: 1rem;
+
+    font: {
+        family: var(--ff-general);
+        weight: var(--fw-extrabold);
+        size: var(--fs-general);
+    }
+
+    background-color: hsl(var(--clr-neutral-body-bg));
+}
+
+.app {
+    min-width: 343px;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: hsl(var(--clr-neutral-main-bg));
+
+    h1 {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.125rem;
+        color: hsl(var(--clr-primary-header));
+    }
+
+    .app__advice {
+        color: hsl(var(--clr-primary-text));
+    }
+}
+
+.app__dice-btn{
+    position: relative;
+    top: 50%;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(var(--clr-primary-btn));
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 2rem 0 hsl(var(--clr-primary-btn));
+    }
+}
