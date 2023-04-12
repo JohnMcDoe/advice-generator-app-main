@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solutions](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solutions](https://www.frontendmentor.io/solutions/advice-generator-app-built-with-htmlsassjavascript-bONguGPW98)
+- Live Site URL: [Github Pages](https://johnmcdoe.github.io/advice-generator-app-main/)
 
 ## My process
 
